@@ -1,0 +1,57 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cup List</title>
+        <link rel="stylesheet" href="{% static 'css/app.css' %}">
+    </head>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a class="newcupbutton" href="{% url 'create_cup' %}">Add New Cup</a>
+                </li>
+                <li>
+                    <a class="newcupbutton" href="{% url 'list_beans' %}">Bean Log</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+         <main>
+            <div>
+                <h1>Cups I've Had</h1>
+                <p>
+                    <table>
+                        <thead>
+                            <th>Date Consumed</th>
+                            <th>Roast Date</th>
+                            <th>Country of Origin</th>
+                            <th>Processing Method</th>
+                            <th>Preperation Method</th>
+                            <th>Rating</th>
+                        </thead>
+                        <tbody>
+                            {% for cup in cups_list %}
+                            <tr>
+
+                                    <td><a class="detailbutton" href="{% url "show_cup" cup.pk %}">{{ cup.date_consumed }}</a></td>
+                                    <td>{{ cup.roast_date }}</td>
+                                    <td>{{ cup.country }}</td>
+                                    <td>{{ cup.processing_method }}</td>
+                                    <td>{{ cup.preperation_method }}</td>
+                                    <td>{{ cup.rating }}</td>
+
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                {% comment %} {% debug %} {% endcomment %}
+            </main>
+        </body>
+    </html>

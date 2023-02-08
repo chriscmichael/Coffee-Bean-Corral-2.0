@@ -1,0 +1,327 @@
+.App {
+    text-align: center;
+  }
+
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+
+  .App-header {
+    background-color: green;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  .App-link {
+    color: #61dafb;
+  }
+
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  body {
+    color: #412B15;
+
+    background-image: url('https://images.pexels.com/photos/5480759/pexels-photo-5480759.jpeg?auto=compress&cs=tinysrgb&w=1600');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: right;
+  }
+  .body2 {
+    background-image: url("https://burmancoffee.com/wp-content/uploads/2022/07/cigano3-1024x683.jpg");
+  }
+
+  h1{
+    font-size: 60px;
+    text-align: center;
+    color: forestgreen;
+    font-weight: bold;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #412B15
+  }
+  h2{
+  text-align: center;
+  font-size: 40px;
+  color: #412B15;
+
+  }
+
+  input[type=text], select, textarea{
+    width: 40%;
+    padding: 15px;
+    border: 5px solid green;
+    border-radius: 50px;
+    box-sizing: border-box;
+    align-self: flex-end;
+    font-size: 20px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+
+  }
+
+  form{
+    /* display: inline-flex; */
+    padding: 3px 6px;
+    flex-direction:column;
+    vertical-align: top;
+    opacity: 80%;
+    width: 70%;
+    ;
+  }
+
+  .form-label{
+    text-align: center;
+    max-width: 80px;
+    margin-right: 3rem;
+    font-weight: bold;
+    font-size: 2rem;
+    color: ivory;
+  }
+  .form-label1{
+    text-align: center;
+
+    margin-right: 20px;
+    margin-left:20px;
+    font-size: 40px;
+    color: ivory;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: green;
+  }
+  .form-label2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: green;
+    font-size: 50px;
+    font-weight: 900;
+    font-stretch: ultra-expanded;
+  }
+  .login{
+    max-width: 500px;
+    margin-right: 20%;
+    margin-left:20%;
+    font-weight:100;
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: green;
+  }
+
+
+  table {
+    table-layout: center;
+    background-color: ivory;
+    opacity: 80%;
+    color: #412B15;
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+
+  th {
+    color: #412B15;
+    height: 50px;
+  }
+
+  table, td, th{
+
+    border: 1px solid;
+
+  }
+  .logo {
+    /* padding: 0px;
+    margin: 0px; */
+    width: 100px;
+    height: 100px;
+  }
+  .link{
+    color: #412B15;
+  }
+  .addHeader{
+    color:white;
+    white-space: nowrap;
+  }
+  .loginHeader{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: green;
+    font-size: 35px;
+    font-weight: bold;
+    font-weight: 900;
+
+  }
+  .searchHeader{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: green;
+    font-size: 50px;
+    font-weight: 900;
+    font-stretch: ultra-expanded;
+  }
+
+  .createcupbutton{
+    width: 300px;
+    padding: 25px;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+    color: #412B15;
+    font-size: 30px;
+
+}
+.createcupbutton:hover{
+    background-color: #412B15;
+    color:green;
+}
+.beanbutton{
+    width: 300px;
+    padding: 15px;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+    color: green;
+    font-size: 30px;
+
+}
+.beanbutton:hover{
+    /* background-color: #412B15;
+    color:green; */
+    color: #412B15;
+    background-color:green;
+
+}
+.newcupbutton{
+    width: 300px;
+    padding: 15px;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+    color: #412B15;
+    font-size: 30px;
+
+}
+.newcupbutton:hover{
+    background-color: #412B15;
+    color:green;
+}
+  .detailbutton{
+    width: 300px;
+    padding: 15px;
+    transition-duration: 0.4s;
+    /* border-radius: 50px; */
+  }
+  .detailbutton:hover{
+    /* background-color: saddlebrown; */
+    color:#412B15;
+
+  }
+  .loginDiv1{
+    display: flex;
+    /* justify-content: center; */
+  }
+  .loginRow{
+    display:flex;
+    flex-direction: row;
+  }
+
+label{
+    /* color: #412B15; */
+    color: forestgreen;
+    font-size: 40px;
+    text-align: left;
+    font-weight: bold;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #412B15;
+
+}
+a{
+    color: green;
+    font-size: 25px;
+
+}
+
+
+/* .glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+} */
+
+header{
+    text-align: left;
+}

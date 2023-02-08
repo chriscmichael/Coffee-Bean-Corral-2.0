@@ -1,0 +1,60 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bean List</title>
+        <link rel="stylesheet" href="{% static 'css/app.css' %}">
+    </head>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a class="beanbutton" href="{% url 'create_bean' %}">Add New Beans</a>
+                </li>
+                <li>
+                    <a class="beanbutton" href="{% url 'list_cups' %}">Cup Log</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <body class ="body2">
+         <main>
+            <div>
+                <h1>Bean Purchases</h1>
+                <p>
+                    <table>
+                        <thead>
+                            <th>Order Number</th>
+                            <th>Purchase Date</th>
+                            <th>Country of Origin</th>
+                            <th>Varietal</th>
+                            <th>Processing Method</th>
+                            <th>Growing Region</th>
+                            <th>Washing Station</th>
+                            <th>Elevation</th>
+                        </thead>
+                        <tbody>
+                            {% for bean in beans_list %}
+                            <tr>
+
+                                    <td><a class="detailbutton" href="{% url "show_bean" bean.pk %}">{{ bean.order_number }}</a></td>
+                                    <td>{{ bean.purchase_date }}</td>
+                                    <td>{{ bean.country }}</td>
+                                    <td>{{ bean.varietal }}</td>
+                                    <td>{{ bean.process }}</td>
+                                    <td>{{ bean.growing_region }}</td>
+                                    <td>{{ bean.washing_station }}</td>
+                                    <td>{{ bean.elevation}}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                {% comment %} {% debug %} {% endcomment %}
+            </main>
+        </body>
+    </html>
